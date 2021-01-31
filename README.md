@@ -6,7 +6,13 @@ You can find a presentation about this topic [here](https://docs.google.com/pres
 
 ## How to compile and run
 
-In order to compile and run the classes you will need to use JDK 15.
+In order to compile and run the classes you will need to use JDK 15 or another one with compatible features.
+
+## Switching between JDKs
+
+You can use the commands under the folder `jdks` to switch between JDKs.
+
+First you need to edit them to reflect your local configuration. You can also add them to you PATH environment variable.
 
 ### Java module
 

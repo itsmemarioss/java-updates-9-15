@@ -1,3 +1,6 @@
+/**
+ * module declaration is located in the base directory.
+ */
 module com.itsmemario.hello {
     //requires another module
     requires java.desktop;
