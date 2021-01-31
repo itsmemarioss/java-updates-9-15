@@ -29,3 +29,15 @@ Run
 ````
 java -p modules/hello -m com.itsmemario.hello/com.itsmemario.hello.HelloWorld
 ````
+
+#### Compile preview features
+
+````
+javac --enable-preview --release 15 Records.java
+````
+
+Run 
+
+````
+java --enable-preview Records
+````
