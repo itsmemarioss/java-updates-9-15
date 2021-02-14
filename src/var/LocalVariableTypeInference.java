@@ -8,6 +8,9 @@ import java.util.*;
  * https://openjdk.java.net/jeps/286
  */
 public class LocalVariableTypeInference {
+
+    private static final String FILE = "src/file.txt";
+
     public static void main (String... args) throws Exception {
         /*
         URL url = new URL("http://www.oracle.com/"); 
@@ -22,7 +25,7 @@ public class LocalVariableTypeInference {
 
         var list = new ArrayList<String>();    // infers ArrayList<String>
         var stream = list.stream();            // infers Stream<String>
-        var path = Paths.get("file.txt");      // infers Path
+        var path = Paths.get(FILE);            // infers Path
         var bytes = Files.readAllBytes(path);  // infers bytes[]
 
         //Enhanced for-loop indexes
@@ -30,7 +33,7 @@ public class LocalVariableTypeInference {
         for (var element : myList) { }  // infers String
 
         //try with resources
-        try (var input = new FileInputStream("validation.txt")) {}   // infers FileInputStream
+        try (var input = new FileInputStream(FILE)) {}   // infers FileInputStream
 
     }
 }
